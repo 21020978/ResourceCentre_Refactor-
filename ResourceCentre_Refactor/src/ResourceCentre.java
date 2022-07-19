@@ -23,6 +23,7 @@ public class ResourceCentre {
 	 * 
 	 */
 	private static final int OPTION_QUIT = 5;
+	
 	public static void main(String[] args) {
 
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
