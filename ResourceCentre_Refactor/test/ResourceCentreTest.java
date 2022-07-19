@@ -19,6 +19,7 @@ public class ResourceCentreTest {
 		super();
 	}
 	
+	
 	@Before
 	public void setUp() throws Exception {
 		// prepare test data
