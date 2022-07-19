@@ -6,6 +6,22 @@ public class ResourceCentre {
 	/**
 	 * 
 	 */
+	private static final int OPTION_RETURN = 4;
+	/**
+	 * 
+	 */
+	private static final int OPTION_LOAN = 3;
+	/**
+	 * 
+	 */
+	private static final int OPTION_ADD = 2;
+	/**
+	 * 
+	 */
+	private static final int OPTION_VIEW = 1;
+	/**
+	 * 
+	 */
 	private static final int OPTION_QUIT = 5;
 	public static void main(String[] args) {
 
@@ -24,12 +40,12 @@ public class ResourceCentre {
 			ResourceCentre.menu();
 			option = Helper.readInt("Enter an option > ");
 
-			if (option == 1) {
+			if (option == OPTION_VIEW) {
 				// View all items
 				ResourceCentre.viewAllCamcorder(camcorderList);
 				ResourceCentre.viewAllChromebook(chromebookList);
 
-			} else if (option == 2) {
+			} else if (option == OPTION_ADD) {
 				// Add a new item
 				ResourceCentre.setHeader("ADD");			
 				ResourceCentre.setHeader("ITEM TYPES");
@@ -54,7 +70,7 @@ public class ResourceCentre {
 					System.out.println("Invalid type");
 				}
 
-			} else if (option == 3) {
+			} else if (option == OPTION_LOAN) {
 				// Loan item
 				ResourceCentre.setHeader("LOAN");			
 				ResourceCentre.setHeader("ITEM TYPES");
@@ -73,7 +89,7 @@ public class ResourceCentre {
 					System.out.println("Invalid type");
 				}
 
-			} else if (option == 4) {
+			} else if (option == OPTION_RETURN) {
 				// Return item
 				ResourceCentre.setHeader("RETURN");				
 				ResourceCentre.setHeader("ITEM TYPES");
