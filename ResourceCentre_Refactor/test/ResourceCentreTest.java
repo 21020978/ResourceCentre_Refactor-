@@ -74,7 +74,7 @@ public class ResourceCentreTest {
 		
 		//test if the list of camcorders retrieved from the SourceCentre is empty - boundary
 		String allCamcorder= ResourceCentre.retrieveAllCamcorder(camcorderList);
-		String testOutput = "";
+		String testOutput ="";
 		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
 		
 		//Given an empty list, after adding 2 items, test if the size of the list is 2 - normal
