@@ -11,8 +11,29 @@ public class Item {
 		this.isAvailable = true;
 	}
 	public String toString() {
+<<<<<<< HEAD
+		String itemInfo = String.format("%-10s %-30s %-10s %-10s",
+				assetTag,
+				description,
+				showAvailability(isAvailable),
+				dueDate);
+=======
 
+>>>>>>> branch 'master' of https://github.com/21020978/ResourceCentre_Refactor-.git
 		// Write your codes here
+<<<<<<< HEAD
+		return itemInfo;
+	}
+	public static String showAvailability(boolean isAvailable) {
+		String avail;
+
+		if (isAvailable == true) {
+			avail = "Yes";
+		} else {
+			avail = "No";
+		}
+		return avail;
+=======
 
 		String itemInfo = String.format("%-10s %-30s %-10s %-10s", 
 				assetTag,
@@ -22,6 +43,7 @@ public class Item {
 		
 		return itemInfo;
 
+>>>>>>> branch 'master' of https://github.com/21020978/ResourceCentre_Refactor-.git
 	}
 	public static String showAvailability(boolean isAvailable) {
 		String avail;
