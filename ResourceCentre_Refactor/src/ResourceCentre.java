@@ -2,18 +2,11 @@ import java.util.ArrayList;
 
 public class ResourceCentre {
 
-<<<<<<< HEAD
+	private static final int OPTION_VIEW = 1;
+	private static final int OPTION_ADD = 2;
+	private static final int OPTION_LOAN = 3;
+	private static final int OPTION_RETURN = 4;
 
-	private static final int OPTION_RETURN = 4;
-	private static final int OPTION_LOAN = 3;
-	private static final int OPTION_ADD = 2;
-	private static final int OPTION_VIEW = 1;
-=======
-	private static final int OPTION_VIEW = 1;
-	private static final int OPTION_ADD = 2;
-	private static final int OPTION_LOAN = 3;
-	private static final int OPTION_RETURN = 4;
->>>>>>> branch 'master' of https://github.com/21020978/ResourceCentre_Refactor-.git
 	private static final int OPTION_QUIT = 5;
 	
 	public static void main(String[] args) {
@@ -38,11 +31,7 @@ public class ResourceCentre {
 				ResourceCentre.viewAllCamcorder(camcorderList);
 				ResourceCentre.viewAllChromebook(chromebookList);
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> branch 'master' of https://github.com/21020978/ResourceCentre_Refactor-.git
 			} else if (option == OPTION_ADD) {
 				// Add a new item
 				ResourceCentre.setHeader("ADD");			
@@ -109,16 +98,10 @@ public class ResourceCentre {
 
 	}
 
-<<<<<<< HEAD
-	/**
-	 * 
-	 */
-	private static void itemTypeMenu() {
-=======
+
 	public static void itemTypeMenu() {
 
 
->>>>>>> branch 'master' of https://github.com/21020978/ResourceCentre_Refactor-.git
 		ResourceCentre.setHeader("ITEM TYPES");
 		System.out.println("1. Camcorder");
 		System.out.println("2. Chromebook");
@@ -158,17 +141,11 @@ public class ResourceCentre {
 
         for (int i = 0; i < camcorderList.size(); i++) {
 
-<<<<<<< HEAD
-            output += String.format("%-84s\n", camcorderList.get(i).toString());
-        }
-        return output;
-    }
-=======
 			output += String.format("%-84s\n", camcorderList.get(i).toString());
 		}
 		return output;
 	}
->>>>>>> branch 'master' of https://github.com/21020978/ResourceCentre_Refactor-.git
+
 	public static void viewAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		ResourceCentre.setHeader("CAMCORDER LIST");
 		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
@@ -182,17 +159,11 @@ public class ResourceCentre {
         // write your code here
         for (int i = 0; i < chromebookList.size(); i++) {
 
-<<<<<<< HEAD
-            output += String.format("%-84s\n", chromebookList.get(i).toString());
-        }
-        return output;
-    }
-=======
 			output += String.format("%-84s\n", chromebookList.get(i).toString());
 		}
 		return output;
 	}
->>>>>>> branch 'master' of https://github.com/21020978/ResourceCentre_Refactor-.git
+
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
 		
 		ResourceCentre.setHeader("CHROMEBOOK LIST");
