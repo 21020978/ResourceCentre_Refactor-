@@ -11,12 +11,7 @@ public class Camcorder extends Item{
 	}
 	
 	public String toString(){
-<<<<<<< HEAD
-		String output = super.toString();
-		output += String.format("%-63s %-20d", output, opticalZoom);
-=======
 
->>>>>>> branch 'master' of https://github.com/21020978/ResourceCentre_Refactor-.git
 		// Write your codes here
 		String output = super.toString();
 		output = String.format("%-63s %-20d", output, opticalZoom);
@@ -26,3 +21,4 @@ public class Camcorder extends Item{
 		
 	}
 }
+
