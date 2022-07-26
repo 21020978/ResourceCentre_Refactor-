@@ -13,7 +13,7 @@ public class Camcorder extends Item{
 	
 	public String toString(){
 		String output = super.toString();
-		output += String.format("Assert tag: %-10s\n Description: %-10s \n Optical Zoom: %10s", getAssetTag());
+		output += String.format("%-63s %-20d", output, opticalZoom);
 		// Write your codes here
 		return output;
 	}
